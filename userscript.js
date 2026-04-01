@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         GeoFS Crashes with Consequences
-// @version      0.1
+// @version      0.1.1
 // @description  Simulates the feel of crashing.
 // @author       GGamerGGuy
 // @match        https://www.geo-fs.com/geofs.php?v=*
@@ -21,7 +21,7 @@ if (localStorage.getItem("yolo") == "true") {
         <a href="https://github.com/tylerbmusic/GeoFS-Crashes-With-Consequences" style="text-decoration: none;color: rgb(79 95 173);">View your death's source code</a>
         <a href="javascript:void(0)" id="change-mind" style="position: absolute;left: 0;width: 100%;text-align: center;bottom: 50px;text-decoration: none;color: rgb(79 95 173);opacity: 0.5;">I've changed my mind</a>
         <div style="position: absolute;z-index: -1;left: 0;opacity: 0.5;top: 0;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;">
-            <img src="https://tylerbmusic.github.io/GPWS-files-geofs/tombstone.jpg" style="max-width: 100vw; max-height: 100vh;">
+            <img src="https://tylerbmusic.github.io/GPWS-files_geofs/tombstone.jpg" style="max-width: 100vw; max-height: 100vh;">
         </div>
         <div style="position: fixed;z-index: 1000000001;top: 0;left: 0;width: 100%;height: 100%;box-shadow: inset 0 0 100px 0 rgba(0,0,0,0.5);pointer-events: none;"></div>
     </div>`;
@@ -48,7 +48,7 @@ async function checkForUpdates() {
     let NAME = "CwC";
     let SPACEDNAME = "Crashes with Consequences";
     let LSNAME = "cwc";
-    let VERSION = "0.1";
+    let VERSION = "0.1.1";
     let URL = "https://github.com/tylerbmusic/GeoFS-Crashes-With-Consequences";
     let a = await fetch('https://tylerbmusic.github.io/versions.json?t=' + Date.now());
     let b = await a.text();
